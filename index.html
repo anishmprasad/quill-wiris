@@ -17,7 +17,11 @@
 			var quill = new Quill('#quill-editor', {
 				modules: {
 					toolbar: true,
-					autoformat: true
+					autoformat: true,
+					wiris: {
+						container: '#counter',
+						unit: 'word'
+					}
 				},
 				placeholder: 'Compose an epic...',
 				theme: 'snow'

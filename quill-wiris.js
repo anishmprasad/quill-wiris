@@ -1,4 +1,5 @@
 var Wiris = function(quill, options) {
+	console.log('quill', quill);
 	this.quill = quill;
 	this.options = options;
 	var container = document.querySelector(options.container);
@@ -20,11 +21,11 @@ wiris.prototype.calculate = function() {
 
 Quill.registerModule('wiris', Wiris);
 
-var quill = new Quill('#editor');
-var counter = quill.addModule('wiris', {
-	container: '#counter',
-	unit: 'word'
-});
+// var quill = new Quill('#editor');
+// var counter = quill.addModule('wiris', {
+// 	container: '#counter',
+// 	unit: 'word'
+// });
 
-// We can now access calculate() directly
-console.log(counter.calculate(), 'words');
+// // We can now access calculate() directly
+// console.log(counter.calculate(), 'words');

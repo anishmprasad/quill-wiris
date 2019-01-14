@@ -10,7 +10,7 @@ var Wiris = function(quill, options) {
 	});
 };
 
-wiris.prototype.calculate = function() {
+Wiris.prototype.calculate = function() {
 	var text = this.quill.getText();
 	if (this.options.unit === 'word') {
 		return text.split(/\s+/).length;
